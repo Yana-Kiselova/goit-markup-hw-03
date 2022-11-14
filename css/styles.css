@@ -195,7 +195,7 @@ img {
 /*============ advantages ============*/
 
 .advantages {
-  padding-top: 47px;
+  padding-top: var(--section-pb);
   padding-bottom: 47px;
 }
 
@@ -212,7 +212,7 @@ img {
   margin-top: 30px;
 }
 
-.advantages-title {
+.advantages-title { 
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -231,7 +231,7 @@ img {
 /*============ our work ============== */
 
 .our-work {
-  padding-top: var(--section-pt);
+  padding-top: 47px;
   padding-bottom: var(--section-pb);
 }
 
@@ -293,6 +293,10 @@ img {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: var(--white-color);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
 }
 
 .team-text {
@@ -364,7 +368,7 @@ img {
   padding: 6px 22px;
 }
 
-.portfolio-item:not(:first-child) {
+.filter-item:not(:first-child) {
   margin-left: 8px;
 }
 
@@ -372,6 +376,8 @@ img {
 .portfolio-button:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
+
+  
 }
 
 .portfolio-list {
@@ -384,8 +390,11 @@ img {
 .portfolio-item {
   margin-left: 30px;
   margin-top: 30px;
-  flex-shrink: calc(100% / 3 - 30px);
+  flex-basis: calc(100% / 3 - 30px);
+
 }
+
+
 
 .portfolio-cart {
   border: 1px solid #eeeeee;
