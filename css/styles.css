@@ -109,7 +109,6 @@ img {
 }
 
 .nav-link {
-  font: var(--main-font);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -123,24 +122,19 @@ img {
   color: var(--accent-color);
 }
 
-.mail-link {
-  font: var(--main-font);
+.mail-link,
+.tel-link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+}
+
+.mail-link {
   margin-right: 50px;
 }
 
-.tel-link {
-  font: var(--main-font);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1, 14;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color);
-}
 .mail-link:hover,
 .mail-link:focus {
   color: var(--accent-color);
@@ -173,7 +167,6 @@ img {
 }
 
 .hero-button {
-  font: var(--main-font);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -300,7 +293,6 @@ img {
 }
 
 .team-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -314,13 +306,21 @@ img {
   padding-bottom: 60px;
 }
 
+.address {
+  line-height: 1.71;
+  margin-top: 20px;
+}
+
 .link-address {
   font: var(--main-font);
-  font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
   color: var(--white-color);
 }
+
+.contact-link {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6); 
+  }
 
 .logo-background-dark {
   color: var(--white-color);
@@ -330,9 +330,6 @@ img {
   margin-bottom: 100px;
 }
 
-.footer-address {
-  margin-top: 20px;
-}
 
 .footer-item {
   margin-bottom: 9px;
